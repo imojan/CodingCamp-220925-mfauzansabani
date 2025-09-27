@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <!-- Header Content -->
-    <header>
-    </header>
+<body class="font-sans">
 
-    <!-- Main Content -->
-    <main>
-    </main>
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0">
+    <div class="logo font-bold text-xl">MyCompany</div>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Footer Content -->
-    <footer>
-\    </footer>
+  <!-- MAIN -->
+  <main>
+    <!-- HOME -->
+    <section id="home" class="text-center py-16">
+      <h1 id="welcome" class="text-3xl font-bold">Hi, Welcome to Website</h1>
+      <p class="text-gray-600 mt-2">Ini adalah website latihan pertama</p>
+      <div class="mt-8">
+        <img src="https://via.placeholder.com/1200x400" alt="Banner" class="mx-auto rounded-md">
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- OUR HEADQUARTER -->
+    <section class="py-16 bg-gray-100">
+      <h2 class="text-center text-2xl font-bold mb-8">Our Headquarter</h2>
+      <div class="flex justify-center gap-16">
+        <div class="text-center">
+          <div class="w-24 h-24 rounded-full border mx-auto"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="text-center">
+          <div class="w-24 h-24 rounded-full border mx-auto"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="text-center">
+          <div class="w-24 h-24 rounded-full border mx-auto"></div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="py-16">
+      <h2 class="text-center text-2xl font-bold mb-8">Our Profile</h2>
+      <div class="max-w-3xl mx-auto text-center">
+        <img src="https://via.placeholder.com/800x300" alt="Company Photo" class="mx-auto mb-6">
+        <p><strong>About Company:</strong> Kami adalah perusahaan yang bergerak di bidang ...</p>
+        <p class="mt-4"><strong>Vision:</strong> Menjadi perusahaan terdepan dalam ...</p>
+        <p><strong>Mission:</strong> Memberikan layanan terbaik, inovasi berkelanjutan, dll.</p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+      <h2 class="text-center text-2xl font-bold mb-8">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-white p-4 shadow">Project 1</div>
+        <div class="bg-white p-4 shadow">Project 2</div>
+        <div class="bg-white p-4 shadow">Project 3</div>
+      </div>
+    </section>
+
+    <!-- MESSAGE US -->
+    <section id="message-us" class="py-16">
+      <h2 class="text-center text-2xl font-bold mb-8">Message Us</h2>
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
+        <!-- FORM -->
+        <form id="contactForm" class="flex-1 space-y-4">
+          <div>
+            <label>Nama</label>
+            <input type="text" id="name" class="border w-full p-2">
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" id="email" class="border w-full p-2">
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="text" id="phone" class="border w-full p-2">
+          </div>
+          <div>
+            <label>Pesan</label>
+            <textarea id="message" class="border w-full p-2"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2">Submit</button>
+        </form>
+
+        <!-- RESULT -->
+        <div class="flex-1 border p-4 bg-gray-50">
+          <h3 class="font-bold mb-2">Result</h3>
+          <div id="result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    Created by [Your Name]
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

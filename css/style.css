@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  padding: 4px 8px;
+  transition: all 0.3s;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
